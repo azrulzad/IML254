@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/BACKGROUND/bg3.jpg');
+        }
+        header {
+            background-color: #33516D;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #169E9E;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #169E9E;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown ul li {
+            border-bottom: 1px solid #ccc;
+        }
+        .dropdown ul li a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown ul li a:hover {
+            background-color: #ff6600;
+        }
+        .dropdown-container:hover .dropdown {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #33516D;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #fix {
+            width: 150px;
+            padding: 10px;
+            background: skyblue;
+            color: black;
+            text-align: center;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="family.html">Family</a>
+        <div class="dropdown-container">
+            <a href="friend.html">Friends</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#nashreen">Nashreen</a></li>
+                    <li><a href="#damia">Damia</a></li>
+                    <li><a href="#isya">Isya</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    
+    <section>
+            <h2>ABOUT ME</h2>
+<video controls src="video/azrul.mp4"
+width="1200"
+height="600"></video>
+
+<br><br><br>
+<h4> HERE SOME DETAILS ABOUT ME</h4>
+            <p>                
+                <table border="1">
+                    <tr>
+                        <td rowspan="8">
+                            <img src="image/me.jpg" alt=""
+                            height="550"
+                            width="550">                
+                        </td>
+
+                        <td>Nama</td>
+                        <td>MUHAMMAD AZRUL AIZAD BIN ABDUL AZIZ</td>
+                    </tr>
+                    <tr>
+                        <td>LIVE</td>
+                        <td>SUNGAI BULOH SELANGOR</td>
+                    </tr>
+                    <tr>
+                        <td>BIRTHDAY</td>
+                        <td>23/4/2004</td>
+                    </tr>
+<tr>
+                        <td>BIRTH PLACE</td>
+                        <td>SUNGAI PETANI</td>
+                    </tr>
+
+                    <tr>
+                        <td>STUDY AT</td>
+                        <td>
+	<ol>
+	<li>SK SAUJANA UTAMA
+	<li><a href="https://www.sutama.edu.my/" target="_blank" style="text-decoration:none;color:crimson;">
+SMK SAUJANA UTAMA</a>	
+<li><a href="https://kedah.uitm.edu.my/" target="_blank"  style="text-decoration:none;color:deeppink;">
+ UITM MERBOK</a>
+	<ol>
+	</td>
+                    </tr>
+                    <tr>
+                        <td>HOBBY</td>
+                <td>
+<ol>
+<li>PLAY GAMES
+<li>PLAY FOOTBALL/ WATCH FOOTBALL
+<li>PLAY BADMINTON
+<li>SNAP RANDOM PICTURE SUCH AS BUIDING,NATURE,OR FOOD.
+</ol>
+</td>
+                    </tr>
+                    <tr>
+                        <td>COLOR</td>
+                        <td>PURPLE</td>
+                    </tr>
+                    <tr>
+                        <td>FAV FOOD</td>
+                        <td>
+                            <ol>
+                                <li>NASI KANDAR</li>
+                                <li>NASI BERIANI</li>
+                                <li>COFFEA</li>
+                            </ol>
+                        </td>
+                    </tr>
+                   
+                </table>
+            </p>
+        </section>
+
+    
+    <footer>
+        <p>&copy; azrul 2024 My Personal Website</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

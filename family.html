@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/BACKGROUND/bg3.jpg');
+        }
+        header {
+            background-color: #33516D;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #169E9E;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #169E9E;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown ul li {
+            border-bottom: 1px solid #ccc;
+        }
+        .dropdown ul li a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown ul li a:hover {
+            background-color: #ff6600;
+        }
+        .dropdown-container:hover .dropdown {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #33516D;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #fix {
+            width: 150px;
+            padding: 10px;
+            background: skyblue;
+            color: black;
+            text-align: center;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="family.html">Family</a>
+        <div class="dropdown-container">
+            <a href="friend.html">Friends</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#nashreen">Nashreen</a></li>
+                    <li><a href="#damia">Damia</a></li>
+                    <li><a href="#isya">Isya</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+
+    <section id="FAMILY">
+        <h2>MY FAMILY </h2>
+       	<p>my father <a href="https://www.facebook.com/aziz.bakar.796?mibextid=ZbWKwL" target="_blank" style="text-decoration:none;color:green;">
+ABDUL AZIZ BIN ABU BAKAR</a> and He is 55 years old and he works at UiTM Puncak Alam .
+	meanwhile
+	my mother <a href="https://www.facebook.com/arzahanida.nida?mibextid=ZbWKwL" target="_blank" style="text-decoration:none;color:crimson;">
+ARZAHANIDA BINTI MD ALIF</a> is 43 years old and she is fully housewife.</p>
+<br>
+ 	<p>I have 3 siblings and i'm the oldest one
+	My first sister is NurDiana Azira and we call her "NANA" and She is 13 years old and My last sister Nur Aaira Diana and we call her "RARA" and She is 8 years old</p>
+
+<br><br><br><br>
+<h3> BABA </h3>
+<img src="image/baba.jpg" width="45%" height=40%" border="5"
+<br><br>
+<h3>MAMA</h3>
+<img src="image/mama.jpg" width="45%" height=40%" border="5"
+<br><br>
+<h3> NANA AND RARA</h3>
+<img src="image/adik.jpg" width="45%" height=40%" border="5"
+
+
+<br><br>
+<h3> THIS IS PICTURE OF MY FAMILY</h3>
+<img src="image/fam1.jpg" width="45%" height=40%" border="5">
+<img src="image/fam2.jpg" width="34%" height=34%" border="5">
+<img src="image/fam3.jpg" width="45%" height=40%" border="5">
+
+
+    </section>
+
+
+    <footer>
+        <p>&copy; azrul 2024 My Personal Website</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

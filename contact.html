@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/BACKGROUND/bg3.jpg');
+        }
+        header {
+            background-color: #33516D;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #169E9E;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #169E9E;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown ul li {
+            border-bottom: 1px solid #ccc;
+        }
+        .dropdown ul li a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown ul li a:hover {
+            background-color: #ff6600;
+        }
+        .dropdown-container:hover .dropdown {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #33516D;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #fix {
+            width: 150px;
+            padding: 10px;
+            background: skyblue;
+            color: black;
+            text-align: center;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="family.html">Family</a>
+        <div class="dropdown-container">
+            <a href="friend.html">Friends</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#nashreen">Nashreen</a></li>
+                    <li><a href="#damia">Damia</a></li>
+                    <li><a href="#isya">Isya</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+
+    <section id="Contact">
+        <h2>THIS IS HOW YOU GUYS CAN CONTACT ME!</h2>
+<br><br>
+<h3>You can click on the picture to contact me </h3>
+<br><br>
+<h4>INSTAGRAM.</h4>
+<a href="https://www.instagram.com/azrulaizad._?igsh=MXBxYml2anBxN2F3dw==" target="_blank">
+<img src="image/insta.jpg" width="40%" height="40%" border="5">
+</a>
+<br><br>
+
+<h5>TIKTOK.</h5>
+<a href="https://www.tiktok.com/@azrulzad_?_t=8muPY6Zyf3Y&_r=1" target="_blank">
+<img src="image/tiktok.jpg" width="40%" height="20%" border="5">
+</a>
+<br<<br>
+<h5>FACEBOOK .</h5>
+<a href="https://www.facebook.com/azrul.aizad.5439?mibextid=ZbWKwL" target="_blank">
+<img src="image/fb.jpg" width="40%" height="20%" border="5">
+</a>
+
+    </section>
+
+    <footer>
+        <p>&copy; azrul 2024 My Personal Website</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

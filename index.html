@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/BACKGROUND/bg3.jpg');
+        }
+        header {
+            background-color: #33516D;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #169E9E;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #169E9E;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown ul li {
+            border-bottom: 1px solid #ccc;
+        }
+        .dropdown ul li a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown ul li a:hover {
+            background-color: #ff6600;
+        }
+        .dropdown-container:hover .dropdown {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #33516D;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #fix {
+            width: 150px;
+            padding: 10px;
+            background: skyblue;
+            color: black;
+            text-align: center;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="family.html">Family</a>
+        <div class="dropdown-container">
+            <a href="friend.html">Friends</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#nashreen">Nashreen</a></li>
+                    <li><a href="#damia">Damia</a></li>
+                    <li><a href="#isya">Isya</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <section id="home">
+        
+<br><br>
+<img src="image\welcome.gif" 
+width="1450"
+height="800"></img>
+
+<br><br>
+     
+<br><br>
+<p>HERE A SOME OF MY SONG RECOMMENDATION</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3VpNy4kKV2I?si=B0EhuKkRybusFAOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mDjkKZlwZf4?si=GsY4mHprDmDj7D_j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ejcIB0K0H7E?si=zPq2J0QQWRYKLOGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DC5Hgj82pc8?si=rlVLwU5YFRwq9Vl6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XAFJjS4myhc?si=VTk6c5zABCWOMIfH&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HJ33FbHxsH0?si=CtQVLbjbd9Ods7-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</center>
+
+<br><br>
+  <h4> QUOTES OF THE DAY .</h4>
+	<p> "Imam shafi'i said : All human are dead except those who have knowledge;".</p>
+<br>
+
+    </section>
+
+
+    <footer>
+        <p>&copy; azrul 2024 My Personal Website</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+

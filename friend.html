@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="style.css">
+    <title>My Personal Website</title>
+   </head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="family.html">Family</a>
+        <div class="dropdown-container">
+            <a href="friend.html">Friends</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#nashreen">Nashreen</a></li>
+                    <li><a href="#damia">Damia</a></li>
+                    <li><a href="#isya">Isya</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section id="friend">
+        <h2>MY FRIENDS</h2>
+        
+        <h3 id="nashreen">NASH</h3>
+        <img src="image/nash.jpg" width="55%" height="55%" alt="Nashreen's picture" border="5">
+        <p>NUR NASHREEN SYAZWIENA.</p>
+        <h4>FAV FOOD:</h4>
+        <p> Mentai rice, roti boy</p>
+        <h4>HOBBY</h4>
+        <p>Love to study</p>
+        <br><br>
+
+        <h3 id="damia">MIYA</h3>
+        <img src="image/ami.jpg" width="55%" height="55%" alt="Damia's picture" border="5">
+        <p>DAMIA.</p>
+        <h4>FAV FOOD:</h4>
+        <p>Nasi putih ayam goreng</p>
+        <h4>HOBBY</h4>
+        <p>Love to watch Youtube such as "POKRO"
+        Cat lover
+	always smile and cheer people</p>
+        <br><br>
+
+        <h3 id="isya">ISYA</h3>
+        <img src="image/isya.jpg" width="55%" height="55%" alt="Isya's picture" border="5">
+        <p>NUR ALYA BATRISYIA BINTI ISMAIL.</p>
+        <p>SARAWAK PEOPLE</p>
+        <h4>FAV FOOD:</h4>
+        <p>Daging (anything bout daging)
+        Roti boy
+        Paru-paru goreng
+        Subway
+        Mentai rice
+        Appolo chocolate</p>
+        <h4>HOBBY</h4>
+        <p>Reading (non-fiction)
+        Studying
+        Playing online games
+        Listening to music</p>
+    </section>
+
+    <div id="fix" class="fixed">
+        <a href="#friend" style="text-decoration: none; color: black;">Back To Top</a>
+    </div>
+
+    <footer>
+        <p>&copy; azrul 2024 My Personal Website</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
